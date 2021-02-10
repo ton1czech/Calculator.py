@@ -25,32 +25,41 @@ def laugh():
     mixer.music.play()
     time.sleep(7)
 
+
+
 # variables
 num1 = input('Enter First Number: ')
-opr = input('Enter Operator|+|-|/|*|%|<>|: ')
+opr = input('Enter Operator|+|-|/|*|%|<>|**|: ')
 num2 = input('Enter Second Number: ')
+
+
 
 # 2 numbers
 def plus_():
     plus = float(num1) + float(num2) 
     print(num1, '+', num2, '=', plus)
     coin()
+
 def minus_():
     minus = float(num1) - float(num2)
     print(num1, '-', num2, '=', minus)
     coin()
+
 def multiply_():
     multiply = float(num1) * float(num2)
     print(num1, '*', num2, '=', multiply)
     coin()
+
 def divided_():
     divided = float(num1) / float(num2)
     print(num1, '/', num2, '=', divided)
     coin()
+
 def percentage_():
     percentage = (int(num1) / int(num2)) * 100
     print(num1, 'of', num2, 'is', percentage, '%')
     coin()
+
 def less_greater_():
     if (float(num1) < float(num2)):
             print(num1, "is less than", num2)
@@ -59,76 +68,107 @@ def less_greater_():
             print(num1, "is greater than", num2)
             coin()
 
+def power_():
+    power = (float(num1) ** float(num2))
+    print(f'{num1} ** {num2} = {power}')
+    coin()
+
+
+
 answer = input('Do you want to add third number ? (y/n) ')
+
+
 
 # 3 numbers
 def plus_plus_():
     plus_plus = float(num1) + float(num2) + float(num3)
     print(num1, '+', num2, '+', num3, '=', plus_plus)
     coin()
+
 def plus_minus_():
     plus_minus = float(num1) + float(num2) - float(num3)
     print(num1, '+', num2, '-', num3, '=', plus_minus)
     coin()
+
 def plus_multiply_():
     plus_multiply = float(num1) + float(num2) * float(num3)
     print(num1, '+', num2, '*', num3, '=', plus_multiply)
     coin()
+
 def plus_divided_():
     plus_divided = float(num1) + float(num2) / float(num3)
     print(num1, '+', num2, '/', num3, '=', plus_divided)
     coin()
 
+
+
+
 def minus_plus_():
     minus_plus = float(num1) - float(num2) + float(num3)
     print(num1, '-', num2, '+', num3, '=', minus_plus)
     coin()
+
 def minus_minus_():
     minus_minus = float(num1) - float(num2) - float(num3)
     print(num1, '-', num2, '-', num3, '=', minus_minus)
     coin()
+
 def minus_multiply_():
     minus_multiply = float(num1) - float(num2) * float(num3)
     print(num1, '-', num2, '*', num3, '=', minus_multiply)
     coin()
+
 def minus_divided_():
     minus_divided = float(num1) - float(num2) / float(num3)
     print(num1, '-', num2, '/', num3, '=', minus_divided)
     coin()
 
+
+
+
 def multiply_plus_():
     multiply_plus = float(num1) * float(num2) + float(num3)
     print(num1, '*', num2, '+', num3, '=', multiply_plus)
     coin()
+
 def multiply_minus_():
     multiply_minus = float(num1) * float(num2) - float(num3)
     print(num1, '*', num2, '-', num3, '=', multiply_minus)
     coin()
+
 def multiply_multiply_():
     multiply_multiply = float(num1) * float(num2) * float(num3)
     print(num1, '*', num2, '*', num3, '=', multiply_multiply)
     coin()
+
 def multiply_divided_():
     multiply_divided = float(num1) * float(num2) / float(num3)
     print(num1, '*', num2, '/', num3, '=', multiply_divided)
     coin()
 
+
+
 def divided_plus_():
     divided_plus = float(num1) / float(num2) + float(num3)
     print(num1, '/', num2, '+', num3, '=', divided_plus)
     coin()
+
 def divided_minus_():
     divided_minus = float(num1) / float(num2) - float(num3)
     print(num1, '/', num2, '-', num3, '=', divided_minus)
     coin()
+
 def divided_multiply_():
     divided_multiply = float(num1) / float(num2) * float(num3)
     print(num1, '/', num2, '*', num3, '=', divided_multiply)
     coin()
+
 def divided_divided_():
     divided_divided = float(num1) / float(num2) / float(num3)
     print(num1, '/', num2, '/', num3, '=', divided_divided)
     coin()
+
+
 
 # operations
 if answer == "n":
@@ -144,6 +184,8 @@ if answer == "n":
         percentage_()
     elif opr == "<>":
         less_greater_()
+    elif opr == "**":
+        power_()
     else:
         print('Wrong operator !')
         fail()
