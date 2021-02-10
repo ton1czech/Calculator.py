@@ -1,5 +1,5 @@
 # ton1czech
-# 15 10 2020
+# 28 09 2020
 
 import pygame
 from pygame import mixer
