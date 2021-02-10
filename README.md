@@ -1,9 +1,9 @@
 # 🎂 Calculator.py 🎂
 This is a template to be used when creating ReadMe files for your Github repositories.
-# 🔥 Simple Python Calculator
-> Up to 3 numbers, 7 operators, sounds and even more...
+# 🔥 **Simple Python Calculator**
+Up to **3 numbers**, **7 operators**, **sounds** and even more...
 
-## 💻 Installation
+## 💻 **Installation**
 
 ```console
 # Install pygame (you need pygame.mixer)
@@ -12,13 +12,13 @@ $ pip install pygame
 
 ---
 
-## 🗒️ Future Plans
+## 🗒️ **Future Plans**
 * Add exponent operation (**)
 * Add integer division operation (//)
 
 ---
 
-## 💭 Description
+## 💭 **Description**
 
 Simple console based python calculator.
 
@@ -43,13 +43,13 @@ This calculator contains one easter-egg.
 
 ---
 
-## ✏ How To Use
+## ✏ **How To Use**
 
 Run the script in the console and happy **calculating**.
 
 ---
 
-## 📎 License
+## 📎 **License**
 
 Copyright (c) [2021] [Daniel Anthony Baudyš]
 
@@ -73,7 +73,7 @@ SOFTWARE.
 
 ---
 
-## Author Info
+## **Author Info**
 
 - Twitter - [@ton1czech](https://twitter.com/ton1czech)
 - Instagram - [@ton1czech](https://instagram.com/ton1czech)
