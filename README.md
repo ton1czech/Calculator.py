@@ -6,9 +6,17 @@ This is a template to be used when creating ReadMe files for your Github reposit
 ## 💻 Installation
 
 ```console
-# Install pygame (you need pygame.mixer for sounds)
+# Install pygame (you need pygame.mixer)
 $ pip install pygame
 ```
+
+---
+
+## 🗒️ Future Plans
+* Add exponent operation (**)
+* Add integer division operation (//)
+
+---
 
 ## 💭 Description
 
@@ -27,19 +35,21 @@ Operations:
 
 <br />
 
-You can calculate up to three numbers even with different operators.
+Very powerful calculator
+
+<br />
+
+This calculator contains one easter-egg.
 
 ---
 
 ## ✏ How To Use
 
-Just run the script and you can calculate in the console.
+Run the script in the console and happy **calculating**.
 
 ---
 
 ## 📎 License
-
-MIT License
 
 Copyright (c) [2021] [Daniel Anthony Baudyš]
 

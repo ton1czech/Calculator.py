@@ -25,6 +25,7 @@ def laugh():
     mixer.music.play()
     time.sleep(7)
 
+# variables
 num1 = input('Enter First Number: ')
 opr = input('Enter Operator|+|-|/|*|%|<>|: ')
 num2 = input('Enter Second Number: ')
@@ -129,6 +130,7 @@ def divided_divided_():
     print(num1, '/', num2, '/', num3, '=', divided_divided)
     coin()
 
+# operations
 if answer == "n":
     if opr == "+":
         plus_()
