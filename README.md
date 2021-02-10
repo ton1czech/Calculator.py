@@ -13,10 +13,10 @@ $ pip install pygame
 ---
 
 ## 📓 **Log**
-28.09.2020 - First commit
-13.10.2020 - Added **Greater or Less** operation
-05.12.2020 - Added **Percentage** operation
-10.02.2021 - Added **power** operation
+* 28.09.2020 - First commit
+* 13.10.2020 - Added **Greater or Less** operation
+* 05.12.2020 - Added **Percentage** operation
+* 10.02.2021 - Added **power** operation
 
 ---
 
