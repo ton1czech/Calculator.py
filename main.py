@@ -1,4 +1,4 @@
-# ton1czech
+# Daniel Anthony Baudyš (ton1czech)
 # 28 09 2020
 
 import pygame
