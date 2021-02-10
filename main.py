@@ -36,46 +36,36 @@ num2 = input('Enter Second Number: ')
 
 # 2 numbers
 def plus_():
-    plus = float(num1) + float(num2) 
-    print(num1, '+', num2, '=', plus)
+    print(f'{num1} + {num2} = {float(num1) + float(num2)}')
     coin()
 
 def minus_():
-    minus = float(num1) - float(num2)
-    print(num1, '-', num2, '=', minus)
+    print(f'{num1} - {num2} = {float(num1) - float(num2)}')
     coin()
 
 def multiply_():
-    multiply = float(num1) * float(num2)
-    print(num1, '*', num2, '=', multiply)
+    print(f'{num1} * {num2} = {float(num1) * float(num2)}')
     coin()
 
 def divided_():
-    divided = float(num1) / float(num2)
-    print(num1, '/', num2, '=', divided)
+    print(f'{num1} / {num2} = {float(num1) / float(num2)}')
     coin()
 
 def percentage_():
-    percentage = (int(num1) / int(num2)) * 100
-    print(num1, 'of', num2, 'is', percentage, '%')
+    print(f'{num1} of {num2} is {(int(num1) / int(num2)) * 100}%')
     coin()
 
 def less_greater_():
     if (float(num1) < float(num2)):
-            print(num1, "is less than", num2)
+            print(f'{num1} is less than {num2}')
             coin()
     elif (float(num1) > float(num2)):
-            print(num1, "is greater than", num2)
+            print(f'{num1} is greater than {num2}')
             coin()
 
 def power_():
-    power = (float(num1) ** float(num2))
-    print(f'{num1} ** {num2} = {power}')
+    print(f'{num1} ** {num2} = {float(num1) ** float(num2)}')
     coin()
-
-
-
-answer = input('Do you want to add third number ? (y/n) ')
 
 
 
@@ -170,6 +160,10 @@ def divided_divided_():
 
 
 
+answer = input('Do you want to add third number ? (y/n) ')
+
+
+
 # operations
 if answer == "n":
     if opr == "+":
@@ -199,7 +193,7 @@ elif answer == "y":
         laugh()
 
     elif ((opr == "+") and (answer == "y")):
-        if  (opr2 == "+"):
+        if (opr2 == "+"):
             plus_plus_()
         elif (opr2 == "-"):
             plus_minus_()
