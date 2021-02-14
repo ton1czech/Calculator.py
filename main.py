@@ -35,27 +35,27 @@ num2 = input('Enter Second Number: ')
 
 
 # 2 numbers
-def plus_(num1, num2):
+def plus_():
     print(f'{num1} + {num2} = {float(num1) + float(num2)}')
     coin()
 
-def minus_(num1, num2):
+def minus_():
     print(f'{num1} - {num2} = {float(num1) - float(num2)}')
     coin()
 
-def multiply_(num1, num2):
+def multiply_():
     print(f'{num1} * {num2} = {float(num1) * float(num2)}')
     coin()
 
-def divided_(num1, num2):
+def divided_():
     print(f'{num1} / {num2} = {float(num1) / float(num2)}')
     coin()
 
-def percentage_(num1, num2):
+def percentage_():
     print(f'{num1} of {num2} is {(int(num1) / int(num2)) * 100}%')
     coin()
 
-def less_greater_(num1, num2):
+def less_greater_():
     if (float(num1) < float(num2)):
             print(f'{num1} is less than {num2}')
             coin()
@@ -63,11 +63,11 @@ def less_greater_(num1, num2):
             print(f'{num1} is greater than {num2}')
             coin()
 
-def power_(num1, num2):
+def power_():
     print(f'{num1} ** {num2} = {float(num1) ** float(num2)}')
     coin()
 
-def integer_divide_(num1, num2):
+def integer_divide_():
     print(f'{num1} // {num2} = {float(num1) // float(num2)}')
     coin()
 
@@ -164,12 +164,13 @@ def divided_divided_():
 
 
 
-answer = input('Do you want to add third number ? (y/n) ')
+print(f'\nCurrently calculating: {num1} {opr} {num2} =')
+pre_num3 = input('Do you want to add third number ? (y/n) ')
 
 
 
 # operations
-if answer == "n":
+if pre_num3 == "n":
     if opr == "+":
         plus_()
     elif opr == "-":
@@ -190,7 +191,7 @@ if answer == "n":
         print('Wrong operator !')
         fail()
         
-elif answer == "y":
+elif pre_num3 == "y":
     opr2 = input('Enter Operator|+|-|/|*|: ')
     num3 = input('Enter Third Number: ')
 
@@ -198,7 +199,7 @@ elif answer == "y":
         print("666............. SEE YOU IN HELL      MUHAHAHAHAHA")
         laugh()
 
-    elif ((opr == "+") and (answer == "y")):
+    elif (opr == "+"):
         if (opr2 == "+"):
             plus_plus_()
         elif (opr2 == "-"):
@@ -211,7 +212,7 @@ elif answer == "y":
             print("Something is wrong !")
             fail()
 
-    elif ((opr == "-") and (answer == "y")):
+    elif (opr == "-"):
         if (opr2 == "+"):
             minus_plus_()
         elif (opr2 == "-"):
@@ -224,7 +225,7 @@ elif answer == "y":
             print("Something is wrong !")
             fail()
 
-    elif ((opr == "*") and (answer == "y")):
+    elif (opr == "*"):
         if (opr2 == "+"):
             multiply_plus_()
         elif (opr2 == "-"):
@@ -237,7 +238,7 @@ elif answer == "y":
             print("Something is wrong !")
             fail()
 
-    elif ((opr == "/") and (answer == "/")):
+    elif (opr == "/"):
         if (opr2 == "+"):
             divided_plus_()
         if (opr2 == "-"):
