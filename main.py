@@ -35,27 +35,27 @@ num2 = input('Enter Second Number: ')
 
 
 # 2 numbers
-def plus_():
+def plus_(num1, num2):
     print(f'{num1} + {num2} = {float(num1) + float(num2)}')
     coin()
 
-def minus_():
+def minus_(num1, num2):
     print(f'{num1} - {num2} = {float(num1) - float(num2)}')
     coin()
 
-def multiply_():
+def multiply_(num1, num2):
     print(f'{num1} * {num2} = {float(num1) * float(num2)}')
     coin()
 
-def divided_():
+def divided_(num1, num2):
     print(f'{num1} / {num2} = {float(num1) / float(num2)}')
     coin()
 
-def percentage_():
+def percentage_(num1, num2):
     print(f'{num1} of {num2} is {(int(num1) / int(num2)) * 100}%')
     coin()
 
-def less_greater_():
+def less_greater_(num1, num2):
     if (float(num1) < float(num2)):
             print(f'{num1} is less than {num2}')
             coin()
@@ -63,11 +63,11 @@ def less_greater_():
             print(f'{num1} is greater than {num2}')
             coin()
 
-def power_():
+def power_(num1, num2):
     print(f'{num1} ** {num2} = {float(num1) ** float(num2)}')
     coin()
 
-def integer_divide_():
+def integer_divide_(num1, num2):
     print(f'{num1} // {num2} = {float(num1) // float(num2)}')
     coin()
 
