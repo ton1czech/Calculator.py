@@ -29,7 +29,7 @@ def laugh():
 
 # variables
 num1 = input('Enter First Number: ')
-opr = input('Enter Operator|+|-|/|*|%|<>|**|: ')
+opr = input('Enter Operator|+|-|/|*|%|<>|**|//|: ')
 num2 = input('Enter Second Number: ')
 
 
@@ -65,6 +65,10 @@ def less_greater_():
 
 def power_():
     print(f'{num1} ** {num2} = {float(num1) ** float(num2)}')
+    coin()
+
+def integer_divide_():
+    print(f'{num1} // {num2} = {float(num1) // float(num2)}')
     coin()
 
 
@@ -180,6 +184,8 @@ if answer == "n":
         less_greater_()
     elif opr == "**":
         power_()
+    elif opr == "//":
+        integer_divide_()
     else:
         print('Wrong operator !')
         fail()
