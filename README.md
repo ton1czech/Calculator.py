@@ -1,12 +1,12 @@
 # 🎂 Calculator.py 🎂
 This is a template to be used when creating ReadMe files for your Github repositories.
 # 🔥 **Simple Python Calculator**
-Up to **3 numbers**, **7 operators**, **sounds** and even more...
+Up to **3 numbers**, **8 operations**, **sounds** and even more...
 
 ## 💻 **Installation**
 
 ```console
-# Install pip modules used in the application
+# Install pip modules
 $ pip install requirements.txt
 ```
 
