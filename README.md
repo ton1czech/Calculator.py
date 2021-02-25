@@ -6,8 +6,8 @@ Up to **3 numbers**, **7 operators**, **sounds** and even more...
 ## 💻 **Installation**
 
 ```console
-# Install pygame (you need pygame.mixer)
-$ pip install pygame
+# Install pip modules used in the application
+$ pip install requirements.txt
 ```
 
 ---
@@ -18,6 +18,7 @@ $ pip install pygame
 * 05.12.2020 - Added **Percentage** operation
 * 10.02.2021 - Added **Power** operation
 * 14.02.2021 - Added **Division Integer** operation
+* 25.02.2021 - Added **requirements file**
 
 ---
 
