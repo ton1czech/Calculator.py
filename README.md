@@ -62,7 +62,7 @@ Run the script in the console and happy **calculating**.
 
 ## 📎 **License**
 
-Copyright (c) [2021] [Daniel Anthony Baudyš]
+Copyright (c) [2020 - 2021] [Daniel Anthony Baudyš]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
