@@ -42,6 +42,7 @@ Operations:
 - Greater - Less (>)
 - Percentage (%)
 - Power (**)
+- Division Integer (//)
 
 <br />
 
