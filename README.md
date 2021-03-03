@@ -62,6 +62,8 @@ Run the script in the console and happy **calculating**.
 
 ## 📎 **License**
 
+MIT License
+
 Copyright (c) [2020 - 2021] [Daniel Anthony Baudyš]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
