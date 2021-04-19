@@ -1,5 +1,5 @@
 # 🎂 Calculator.py 🎂
-This is a template to be used when creating ReadMe files for your Github repositories.
+Calculate in Python
 # 🔥 **Simple Python Calculator**
 Up to **3 numbers**, **8 operations**, **sounds** and even more...
 
