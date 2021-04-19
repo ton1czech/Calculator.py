@@ -7,7 +7,7 @@ Up to **3 numbers**, **8 operations**, **sounds** and even more...
 
 ```console
 # Install pip modules
-$ pip install requirements.txt
+$ pip install -r requirements.txt
 ```
 
 ---
