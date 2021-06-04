@@ -1,258 +1,30 @@
-# Daniel Anthony Baudyš (ton1czech)
-# 28 09 2020
-
-import pygame
-from pygame import mixer
-import time
-import os
-
-# sounds
-def coin():
-    mixer.init()
-    mixer.music.load('audio/coin.wav')
-    mixer.music.play()
-    time.sleep(1)
-
-def fail():
-    mixer.init()
-    mixer.music.load('audio/fail.wav')
-    mixer.music.play()
-    time.sleep(1.5)
-
-def laugh():
-    mixer.init()
-    mixer.music.load('audio/laugh.wav')
-    mixer.music.play()
-    time.sleep(7)
+#####################################
+# Daniel Anthony Baudyš (ton1czech) #
+# 28 09 2020                        #
+#####################################
 
 
 
-# variables
-num1 = input('Enter First Number: ')
-opr = input('Enter Operator|+|-|/|*|%|<>|**|//|: ')
-num2 = input('Enter Second Number: ')
+### IMPORTS ###
+from operations import _addition, _subtraction, _multiplication, _division
+from audio.audio import s_coin, s_fail, s_laugh
 
 
 
-# 2 numbers
-def plus_():
-    print(f'{num1} + {num2} = {float(num1) + float(num2)}')
-    coin()
+### MECHANISM ###
+base_number = float(input('Enter your first number: '))
+opr = input('Enter Operator (|+|-|*|/|): ')
 
-def minus_():
-    print(f'{num1} - {num2} = {float(num1) - float(num2)}')
-    coin()
+numbers = input("Enter another numbers (n1,n2): ").split(",")
+numbers = [float(i) for i in numbers]
 
-def multiply_():
-    print(f'{num1} * {num2} = {float(num1) * float(num2)}')
-    coin()
-
-def divided_():
-    print(f'{num1} / {num2} = {float(num1) / float(num2)}')
-    coin()
-
-def percentage_():
-    print(f'{num1} of {num2} is {(int(num1) / int(num2)) * 100}%')
-    coin()
-
-def less_greater_():
-    if (float(num1) < float(num2)):
-            print(f'{num1} is less than {num2}')
-            coin()
-    elif (float(num1) > float(num2)):
-            print(f'{num1} is greater than {num2}')
-            coin()
-
-def power_():
-    print(f'{num1} ** {num2} = {float(num1) ** float(num2)}')
-    coin()
-
-def integer_divide_():
-    print(f'{num1} // {num2} = {float(num1) // float(num2)}')
-    coin()
-
-
-
-# 3 numbers
-def plus_plus_():
-    plus_plus = float(num1) + float(num2) + float(num3)
-    print(num1, '+', num2, '+', num3, '=', plus_plus)
-    coin()
-
-def plus_minus_():
-    plus_minus = float(num1) + float(num2) - float(num3)
-    print(num1, '+', num2, '-', num3, '=', plus_minus)
-    coin()
-
-def plus_multiply_():
-    plus_multiply = float(num1) + float(num2) * float(num3)
-    print(num1, '+', num2, '*', num3, '=', plus_multiply)
-    coin()
-
-def plus_divided_():
-    plus_divided = float(num1) + float(num2) / float(num3)
-    print(num1, '+', num2, '/', num3, '=', plus_divided)
-    coin()
-
-
-
-
-def minus_plus_():
-    minus_plus = float(num1) - float(num2) + float(num3)
-    print(num1, '-', num2, '+', num3, '=', minus_plus)
-    coin()
-
-def minus_minus_():
-    minus_minus = float(num1) - float(num2) - float(num3)
-    print(num1, '-', num2, '-', num3, '=', minus_minus)
-    coin()
-
-def minus_multiply_():
-    minus_multiply = float(num1) - float(num2) * float(num3)
-    print(num1, '-', num2, '*', num3, '=', minus_multiply)
-    coin()
-
-def minus_divided_():
-    minus_divided = float(num1) - float(num2) / float(num3)
-    print(num1, '-', num2, '/', num3, '=', minus_divided)
-    coin()
-
-
-
-
-def multiply_plus_():
-    multiply_plus = float(num1) * float(num2) + float(num3)
-    print(num1, '*', num2, '+', num3, '=', multiply_plus)
-    coin()
-
-def multiply_minus_():
-    multiply_minus = float(num1) * float(num2) - float(num3)
-    print(num1, '*', num2, '-', num3, '=', multiply_minus)
-    coin()
-
-def multiply_multiply_():
-    multiply_multiply = float(num1) * float(num2) * float(num3)
-    print(num1, '*', num2, '*', num3, '=', multiply_multiply)
-    coin()
-
-def multiply_divided_():
-    multiply_divided = float(num1) * float(num2) / float(num3)
-    print(num1, '*', num2, '/', num3, '=', multiply_divided)
-    coin()
-
-
-
-def divided_plus_():
-    divided_plus = float(num1) / float(num2) + float(num3)
-    print(num1, '/', num2, '+', num3, '=', divided_plus)
-    coin()
-
-def divided_minus_():
-    divided_minus = float(num1) / float(num2) - float(num3)
-    print(num1, '/', num2, '-', num3, '=', divided_minus)
-    coin()
-
-def divided_multiply_():
-    divided_multiply = float(num1) / float(num2) * float(num3)
-    print(num1, '/', num2, '*', num3, '=', divided_multiply)
-    coin()
-
-def divided_divided_():
-    divided_divided = float(num1) / float(num2) / float(num3)
-    print(num1, '/', num2, '/', num3, '=', divided_divided)
-    coin()
-
-
-
-print(f'\nCurrently calculating: {num1} {opr} {num2} =')
-pre_num3 = input('Do you want to add third number ? (y/n) ')
-
-
-
-# operations
-if pre_num3 == "n":
-    if opr == "+":
-        plus_()
-    elif opr == "-":
-        minus_()
-    elif opr == "*":
-        multiply_()
-    elif opr == "/":
-        divided_()
-    elif opr == "%":
-        percentage_()
-    elif opr == "<>":
-        less_greater_()
-    elif opr == "**":
-        power_()
-    elif opr == "//":
-        integer_divide_()
-    else:
-        print('Wrong operator !')
-        fail()
-        
-elif pre_num3 == "y":
-    opr2 = input('Enter Operator|+|-|/|*|: ')
-    num3 = input('Enter Third Number: ')
-
-    if ((num1 == "6") and (opr == "+") and (num2 == "6") and (opr2 == "+") and (num3 == "6")):
-        print("666............. SEE YOU IN HELL      MUHAHAHAHAHA")
-        laugh()
-
-    elif (opr == "+"):
-        if (opr2 == "+"):
-            plus_plus_()
-        elif (opr2 == "-"):
-            plus_minus_()
-        elif (opr2 == "*"):
-            plus_multiply_()
-        elif (opr2 == "/"):
-            plus_divided_()
-        else:
-            print("Something is wrong !")
-            fail()
-
-    elif (opr == "-"):
-        if (opr2 == "+"):
-            minus_plus_()
-        elif (opr2 == "-"):
-            minus_minus_()
-        elif (opr2 == "*"):
-            minus_multiply_()
-        elif (opr2 == "/"):
-            minus_divided_()
-        else:
-            print("Something is wrong !")
-            fail()
-
-    elif (opr == "*"):
-        if (opr2 == "+"):
-            multiply_plus_()
-        elif (opr2 == "-"):
-            multiply_minus_()
-        elif (opr2 == "*"):
-            multiply_multiply_()
-        elif (opr2 == "/"):
-            multiply_divided_()
-        else:
-            print("Something is wrong !")
-            fail()
-
-    elif (opr == "/"):
-        if (opr2 == "+"):
-            divided_plus_()
-        if (opr2 == "-"):
-            divided_minus_()
-        if (opr2 == "*"):
-            divided_multiply_()
-        if (opr2 == "/"):
-            divided_divided_()
-        else:
-            print("Something is wrong !")
-            fail()
-    else:
-        print("Wrong operator !")
-        fail()
+if opr == '+':
+    _addition(base_number, *numbers)
+elif opr == '-':
+    _subtraction(base_number, *numbers)
+elif opr == '*':
+    _multiplication(base_number, *numbers)
+elif opr == '/':
+    _division(base_number, *numbers)
 else:
-    print("Something is wrong !")
-    fail()
+    print("Wrong Operator")
