@@ -27,6 +27,7 @@ def _division(base_num, *nums):
     print(f"{res}")
     __hell(res)
 
+### EASTER EGGS ###
 def __hell(res):
     if res == 666:
         print("See you in hell")
