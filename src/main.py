@@ -7,7 +7,6 @@
 
 ### IMPORTS ###
 from operations import _addition, _subtraction, _multiplication, _division
-from audio.audio import s_coin, s_fail, s_laugh
 
 
 
