@@ -6,24 +6,22 @@
 
 
 ### IMPORTS ###
-from operations import _addition, _subtraction, _multiplication, _division
-
+from operations import addition, subtraction, multiplication, division
 
 
 ### MECHANISM ###
-base_number = float(input('Enter your first number: '))
-opr = input('Enter Operator (|+|-|*|/|): ')
+base = float(input('Enter your first number: '))
+opr = input('Enter Operator (+ - * /): ')
 
-numbers = input("Enter another numbers (n1,n2): ").split(",")
-numbers = [float(i) for i in numbers]
+nums = [float(i) for i in input("Enter another numbers (n1,n2): ").split(",")]
 
 if opr == '+':
-    _addition(base_number, *numbers)
+    addition(base, *nums)
 elif opr == '-':
-    _subtraction(base_number, *numbers)
+    subtraction(base, *nums)
 elif opr == '*':
-    _multiplication(base_number, *numbers)
+    multiplication(base, *nums)
 elif opr == '/':
-    _division(base_number, *numbers)
+    division(base, *nums)
 else:
     print("Wrong Operator")

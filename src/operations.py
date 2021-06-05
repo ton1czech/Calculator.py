@@ -1,24 +1,24 @@
 ### OPERATIONS ###
-def _addition(base_num, *nums):
-    res = base_num
-    for num in nums:
+def addition(base, *nums):
+    res = base
+    for base, num in nums:
         res += num
     print(f"{res}")
 
-def _subtraction(base_num, *nums):
-    res = base_num
+def subtraction(base, *nums):
+    res = base
     for num in nums:
         res -= num
     print(f"{res}")
 
-def _multiplication(base_num, *nums):
-    res = base_num
+def multiplication(base, *nums):
+    res = base
     for num in nums:
         res *= num
     print(f"{res}")
 
-def _division(base_num, *nums):
-    res = base_num
+def division(base, *nums):
+    res = base
     for num in nums:
         res /= num
     print(f"{res}")
