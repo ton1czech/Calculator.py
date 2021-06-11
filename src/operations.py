@@ -22,3 +22,6 @@ def division(base, *nums):
     for num in nums:
         res /= num
     print(f"{res}")
+
+def exponent(base, num):
+    print(f"{base} ** {num} = {base ** num}")
