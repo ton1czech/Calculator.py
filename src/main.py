@@ -16,15 +16,19 @@ opr = input('Enter Operator (+ - * / **): ')
 
 nums = [float(i) for i in input("Enter another number/s (n1,n2): ").split(",")]
 
-if opr == '+':
-    op.addition(base, *nums)
-elif opr == '-':
-    op.subtraction(base, *nums)
-elif opr == '*':
-    op.multiplication(base, *nums)
-elif opr == '/':
-    op.division(base, *nums)
-elif opr == '**':
-    op.exponent(base, nums[0])
-else:
-    print("Wrong Operator")
+def calculate():
+    if opr == '+':
+        op.addition(base, *nums)
+    elif opr == '-':
+        op.subtraction(base, *nums)
+    elif opr == '*':
+        op.multiplication(base, *nums)
+    elif opr == '/':
+        op.division(base, *nums)
+    elif opr == '**':
+        op.exponent(base, nums[0])
+    else:
+        print("Wrong Operator")
+
+if __name__ == "__main__":
+    calculate()

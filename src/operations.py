@@ -1,7 +1,7 @@
 ### OPERATIONS ###
 def addition(base, *nums):
     res = base
-    for base, num in nums:
+    for num in nums:
         res += num
     print(f"{res}")
 
