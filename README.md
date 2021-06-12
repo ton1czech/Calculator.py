@@ -1,29 +1,17 @@
 # 🎂 Calculator.py 🎂
-Calculate in Python
-# 🔥 **Simple Python Calculator**
-Up to **3 numbers**, **8 operations**, **sounds** and even more...
 
-## 💻 **Installation**
+## ✏ **How To Use**
 
-```console
-# Install pip modules
-$ pip install -r requirements.txt
 ```
+$ cd Calculator.py
 
----
+# Option 1 (Run locally):
+$ python3 src/main.py
 
-## 📓 **Log**
-* 28.09.2020 - First commit
-* 13.10.2020 - Added **Greater or Less** operation
-* 05.12.2020 - Added **Percentage** operation
-* 10.02.2021 - Added **Power** operation
-* 14.02.2021 - Added **Division Integer** operation
-* 25.02.2021 - Added **requirements file**
-
----
-
-## 🗒️ **Future Plans**
-* Calculate more than 3 numbers
+# Option 2 (Docker run):
+$ sudo docker build -t calculator .
+$ sudo docker run -ti calculator
+```
 
 ---
 
@@ -34,29 +22,12 @@ Simple console based python calculator.
 <br />
 
 Operations:
+
 - Addition (+)
 - Subtraction (-)
-- Multiplication (*)
+- Multiplication (\*)
 - Division (/)
-- Less - Greater (<)
-- Greater - Less (>)
-- Percentage (%)
-- Power (**)
-- Division Integer (//)
-
-<br />
-
-Very powerful calculator
-
-<br />
-
-This calculator contains one easter-egg.
-
----
-
-## ✏ **How To Use**
-
-Run the script in the console and happy **calculating**.
+- Power (\*\*)
 
 ---
 
@@ -86,7 +57,7 @@ SOFTWARE.
 
 ---
 
-## **Author Info**
+## 👩‍💻 **Author**
 
 - Twitter - [@ton1czech](https://twitter.com/ton1czech)
 - Instagram - [@ton1czech](https://instagram.com/ton1czech)
