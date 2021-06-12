@@ -3,10 +3,7 @@
 # 28 09 2020                        #
 #####################################
 
-
-
 ### IMPORTS ###
-# from operations import addition, subtraction, multiplication, division
 import operations as op
 
 
@@ -18,7 +15,7 @@ nums = [float(i) for i in input("Enter another number/s (n1,n2): ").split(",")]
 
 def calculate():
     if opr == '+':
-        op.addition(base, *nums)
+        op.addition(opr, base, *nums)
     elif opr == '-':
         op.subtraction(base, *nums)
     elif opr == '*':

@@ -1,27 +1,35 @@
 ### OPERATIONS ###
-def addition(base, *nums):
+def addition(opr, base, *nums):
+    print(base, end="")
     res = base
     for num in nums:
         res += num
-    print(f"{res}")
+        print(f" {opr} {num}", end="")
+    print(f" = {res}")
 
-def subtraction(base, *nums):
+def subtraction(opr, base, *nums):
+    print(base, end="")
     res = base
     for num in nums:
         res -= num
-    print(f"{res}")
+        print(f" {opr} {num}", end="")
+    print(f" = {res}")
 
-def multiplication(base, *nums):
+def multiplication(opr, base, *nums):
+    print(base, end="")
     res = base
     for num in nums:
         res *= num
-    print(f"{res}")
+        print(f" {opr} {num}", end="")
+    print(f" = {res}")
 
-def division(base, *nums):
+def division(opr, base, *nums):
+    print(base, end="")
     res = base
     for num in nums:
         res /= num
-    print(f"{res}")
+        print(f" {opr} {num}", end="")
+    print(f" = {res}")
 
-def exponent(base, num):
-    print(f"{base} ** {num} = {base ** num}")
+def exponent(opr, base, num):
+    print(f"{base} {opr} {num} = {base ** num}")
