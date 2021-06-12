@@ -19,13 +19,13 @@ def calculate():
         if opr == '+':
             op.addition(opr, base, *nums)
         elif opr == '-':
-            op.subtraction(base, *nums)
+            op.subtraction(opr, base, *nums)
         elif opr == '*':
-            op.multiplication(base, *nums)
+            op.multiplication(opr, base, *nums)
         elif opr == '/':
-            op.division(base, *nums)
+            op.division(opr, base, *nums)
         elif opr == '**':
-            op.exponent(base, nums[0])
+            op.exponent(opr, base, nums[0])
         else:
             print("Wrong Operator")
 
