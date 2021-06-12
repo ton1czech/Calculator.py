@@ -7,25 +7,31 @@
 import operations as op
 
 
+
 ### MECHANISM ###
-base = float(input('Enter your first number: '))
-opr = input('Enter Operator (+ - * / **): ')
-
-nums = [float(i) for i in input("Enter another number/s (n1,n2): ").split(",")]
-
 def calculate():
-    if opr == '+':
-        op.addition(opr, base, *nums)
-    elif opr == '-':
-        op.subtraction(base, *nums)
-    elif opr == '*':
-        op.multiplication(base, *nums)
-    elif opr == '/':
-        op.division(base, *nums)
-    elif opr == '**':
-        op.exponent(base, nums[0])
-    else:
-        print("Wrong Operator")
+    while True:
+        base = float(input("Enter your first number: "))
+        opr = input("Enter Operator (+ - * / **): ")
+
+        nums = [float(i) for i in input("Enter another number/s (n1,n2): ").split(",")]
+
+        if opr == '+':
+            op.addition(opr, base, *nums)
+        elif opr == '-':
+            op.subtraction(base, *nums)
+        elif opr == '*':
+            op.multiplication(base, *nums)
+        elif opr == '/':
+            op.division(base, *nums)
+        elif opr == '**':
+            op.exponent(base, nums[0])
+        else:
+            print("Wrong Operator")
+
+        more = input("Do you want to calculate more? (Y/n): ")
+        if more == "n" or more == "no" or more == 'No':
+            break
 
 if __name__ == "__main__":
     calculate()
