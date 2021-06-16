@@ -2,15 +2,18 @@
 
 ## ✏ **How To Use**
 
-```
-$ cd calcmachine
+```python
+#Step 1:
+cd calcmachine
 
+# Step 2:
 # Option 1 (Run locally):
-$ python3 src/calcmachine.py
+python3 src/calcmachine.py
 
 # Option 2 (run via Docker):
-$ docker build -t calcmachine .
-$ docker run -ti calcmachine
+docker build -t calcmachine .
+docker run -ti calcmachine
+
 ```
 
 ---
