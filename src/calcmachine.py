@@ -3,16 +3,15 @@
 # 28 09 2020                        #
 #####################################
 
-### IMPORTS ###
 import operations as op
+from curtsies.fmtfuncs import cyan, magenta, red, bold
 
 
 
-### MECHANISM ###
 def calculate():
     while True:
         base = float(input("Enter your first number: "))
-        opr = input("Enter Operator (+ - * / **): ")
+        opr = input(f"Enter Operator {bold('(+ - * / **)')}: ")
 
         nums = [float(i) for i in input("Enter another number/s (n1,n2): ").split(",")]
 
@@ -27,10 +26,11 @@ def calculate():
         elif opr == '**':
             op.exponent(opr, base, nums[0])
         else:
-            print("Wrong Operator")
+            print(red("Wrong Operator!"))
 
-        more = input("Do you want to calculate more? (Y/n): ")
+        more = input(magenta("Do you want to calculate more? (Y/n): "))
         if more == "n" or more == "no" or more == 'No':
+            print(cyan("Sad to see you go. See you soon."))
             break
 
 if __name__ == "__main__":
