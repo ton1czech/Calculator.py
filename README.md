@@ -6,7 +6,7 @@
 $ cd calcmachine
 
 # Option 1 (Run locally):
-$ python3 src/main.py
+$ python3 src/calcmachine.py
 
 # Option 2 (Docker run):
 $ sudo docker build -t calcmachine .
