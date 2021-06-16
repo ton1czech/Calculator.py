@@ -8,9 +8,9 @@ $ cd calcmachine
 # Option 1 (Run locally):
 $ python3 src/calcmachine.py
 
-# Option 2 (Docker run):
-$ sudo docker build -t calcmachine .
-$ sudo docker run -ti calcmachine
+# Option 2 (run via Docker):
+$ docker build -t calcmachine .
+$ docker run -ti calcmachine
 ```
 
 ---
