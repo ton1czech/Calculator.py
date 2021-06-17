@@ -19,20 +19,39 @@ Operations:
 ## ✏ **How To Use**
 
 ```bash
-#Step 1:
+# Option 1 (run locally):
+# Step 1: Clone the repo
+git clone https://github.com/ton1czech/calcmachine
+
+# Step 2: CD into cloned repo
 cd calcmachine
 
-# Option 1 (run locally):
-# Step 2:
+# Step 3: Install dependencies
 pip install -r requirements.txt
 
-# Step 3:
+# Step 4: Run calcmachine
 python3 src/calcmachine.py
 
-# Option 2 (run via Docker):
-# Step 2:
+----------------------------------------------------
+
+# Option 2 (run locally via Docker):
+# Step 1: Clone the repo
+git clone https://github.com/ton1czech/calcmachine
+
+# Step 2: CD into cloned repo
+
+# Step 3: Build the app
 docker build -t calcmachine .
+
+# Step 4: Run the app
 docker run -ti calcmachine
+
+----------------------------------------------------
+
+# Option 3 (run remotely via Docker):
+# Step 1: Run the app
+docker run -ti ton1czech/calcmachine:1.3
+
 
 ```
 
