@@ -50,7 +50,7 @@ docker run -ti calcmachine
 
 # Option 3 (run remotely via Docker):
 # Step 1: Run the app
-docker run -ti ton1czech/calcmachine:1.3
+docker run -ti ton1czech/calcmachine:1.4.0
 
 
 ```
