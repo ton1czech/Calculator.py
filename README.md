@@ -50,9 +50,7 @@ docker run -ti calcmachine
 
 # Option 3 (run remotely via Docker):
 # Step 1: Run the app
-docker run -ti ton1czech/calcmachine:1.4.0
-
-
+docker run -ti ton1czech/calcmachine:1.5.1
 ```
 
 ---
@@ -71,7 +69,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ---
 
-## 👩‍💻 **Author**
+## 👨‍💻 **Author**
 
 - Twitter - [@ton1czech](https://twitter.com/ton1czech)
 - Instagram - [@ton1czech](https://instagram.com/ton1czech)
