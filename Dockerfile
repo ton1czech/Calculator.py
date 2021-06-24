@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY src .
 COPY requirements.txt .
+COPY README.md .
 
 RUN pip install -r requirements.txt
 
