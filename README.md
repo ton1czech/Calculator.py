@@ -12,7 +12,9 @@ Operations:
 - Subtraction (-)
 - Multiplication (\*)
 - Division (/)
-- Power (\*\*)
+- Exponent (\*\*)
+- Modulus/Remainder (%)
+- Integer Division (//)
 
 ---
 
