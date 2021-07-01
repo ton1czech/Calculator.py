@@ -41,6 +41,7 @@ python3 src/calcmachine.py
 git clone https://github.com/ton1czech/calcmachine
 
 # Step 2: CD into cloned repo
+cd calcmachine
 
 # Step 3: Build the app
 docker build -t calcmachine .
