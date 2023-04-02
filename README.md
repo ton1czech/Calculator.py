@@ -1,6 +1,6 @@
 <div align='center'>
     <h1><b>🚀 CALCMACHINE 🚀</b></h1>
-    <img src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/322/chart-increasing_1f4c8.png' width='250' height='250' />
+    <img src='./docs/icon.png' width='250' height='250' />
     <p>command line calculator tool</p>
 
 ![Python](https://badgen.net/badge/Python/3.10.8/blue?)
@@ -73,7 +73,7 @@ docker run -ti ton1czech/calcmachine:1.5.1
 
 ## 🔎 **SHOWCASE**
 
-<img src='https://imgur.com/YH6Cdm6.png' />
+<img src='./docs/1.png' />
 
 <br />
 
@@ -90,7 +90,7 @@ docker run -ti ton1czech/calcmachine:1.5.1
 
 MIT License
 
-Copyright © 2022 Daniel Anthony Baudyš (ton1czech)
+Copyright © 2022-2023 Daniel Anthony Baudyš (ton1czech)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -102,7 +102,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ---
 
-## 📌 **LINKS**
+## 📌 **CREDITS**
+
+##### Daniel Anthony Baudyš (ton1czech)
+
+programmer, investor and god 🤫
+
+<img alt='ton1czech' src='https://avatars.githubusercontent.com/u/66372827?v=4' />
 
 [<img alt="Github" src="https://img.shields.io/badge/@ton1czech-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" />](https://github.com/ton1czech)
 [<img alt="Twitter" src="https://img.shields.io/badge/@ton1czech-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" />](https://twitter.com/ton1czech)
